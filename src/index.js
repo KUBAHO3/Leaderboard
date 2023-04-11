@@ -1,20 +1,14 @@
 import './style.css';
+import Score from './modules/getScore';
 
-const leaderboardData = [
-  { name: 'Name', score: 100 },
-  { name: 'Name', score: 30 },
-  { name: 'Name', score: 25 },
-  { name: 'Name', score: 87 },
-  { name: 'Name', score: 57 },
-  { name: 'Name', score: 10 },
-];
 
-const tbody = document.querySelector('.table-body');
-const leaderboard = leaderboardData.map((data) => `
-  <tr>
-    <td scope="row">${data.name}:</td>
-    <td>${data.score}</td>
-  </tr>
-`).join('');
+const Form = document.querySelector('form');
+const refresh = document.querySelector('#refresh');
 
-tbody.innerHTML = leaderboard;
+const score = new Score();
+score.render();
+
+refresh.addEventListener('click', () => {
+  window.location.reload();
+});
+
