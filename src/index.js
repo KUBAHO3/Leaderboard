@@ -1,5 +1,5 @@
 import './style.css';
-import Score from './modules/getScore';
+import Score from './modules/getScore.js';
 import postScore from './modules/postScore.js';
 
 const Form = document.querySelector('form');

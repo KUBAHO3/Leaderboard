@@ -1,4 +1,3 @@
-
 const Form = document.querySelector('form');
 const postScore = async (url, render) => {
   try {
