@@ -195,10 +195,6 @@ git@github.com:KUBAHO3/Sharing-World.git
 - Twitter: [@KubahoH](https://twitter.com/KubahoH)
 - LinkedIn: [Kubaho Linne Heaven](https://www.linkedin.com/in/kubaho-linne-heaven-78ab37208/)
 
-:bust_in_silhouette: **Yusuf Sholotan**
-- GitHub: [@yin-ka](https://github.com/yin-ka)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 
 ## :telescope: Future Features <a name="future-features"></a><br/>
