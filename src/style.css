@@ -1,3 +1,17 @@
-.hello {
-  color: red;
+
+body {
+  background: rgb(231, 231, 231);
+  background: radial-gradient(circle, rgba(231, 231, 231, 1) 0%, rgba(241, 241, 241, 1) 100%);
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 40px;
 }
