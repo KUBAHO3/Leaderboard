@@ -1,20 +1,17 @@
 import './style.css';
+import Score from './modules/getScore.js';
+import postScore from './modules/postScore.js';
 
-const leaderboardData = [
-  { name: 'Name', score: 100 },
-  { name: 'Name', score: 30 },
-  { name: 'Name', score: 25 },
-  { name: 'Name', score: 87 },
-  { name: 'Name', score: 57 },
-  { name: 'Name', score: 10 },
-];
+const Form = document.querySelector('form');
+const refresh = document.querySelector('#refresh');
 
-const tbody = document.querySelector('.table-body');
-const leaderboard = leaderboardData.map((data) => `
-  <tr>
-    <td scope="row">${data.name}:</td>
-    <td>${data.score}</td>
-  </tr>
-`).join('');
+const score = new Score();
+score.render();
 
-tbody.innerHTML = leaderboard;
+refresh.addEventListener('click', () => {
+  window.location.reload();
+});
+Form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  postScore(score.url, score.render);
+});
